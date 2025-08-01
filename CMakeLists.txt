@@ -1,14 +1,14 @@
-add_library(dc_motor STATIC)
+add_library(bno055 STATIC)
 
-target_sources(dc_motor PRIVATE 
-    dc_motor.c
+target_sources(bno055 PRIVATE 
+    bno055.c
 )
 
-target_include_directories(dc_motor PUBLIC
+target_include_directories(bno055 PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-target_compile_options(dc_motor PUBLIC
+target_compile_options(bno055 PUBLIC
     -std=c23
     -Wall
     -Wextra

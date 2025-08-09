@@ -20,7 +20,21 @@ typedef struct {
     float32_t x;
     float32_t y;
     float32_t z;
-} vec3_float32_t_t;
+} vec3_float32_t;
+
+typedef struct {
+    int16_t w;
+    int16_t x;
+    int16_t y;
+    int16_t z;
+} quat3_int16_t;
+
+typedef struct {
+    float32_t w;
+    float32_t x;
+    float32_t y;
+    float32_t z;
+} quat3_float32_t;
 
 typedef enum {
     BNO055_ERR_OK = 0,
@@ -170,6 +184,8 @@ typedef struct {
     float32_t accel_scale;
     float32_t gyro_scale;
     float32_t mag_scale;
+    float32_t quat_scale;
+    float32_t euler_scale;
 } bno055_config_t;
 
 typedef struct {

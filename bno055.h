@@ -100,6 +100,83 @@ bno055_err_t bno055_get_euler_data_raw(bno055_t const* bno055,
 
 bno055_err_t bno055_get_temp_data_raw(bno055_t const* bno055, int16_t* raw);
 
+bno055_err_t bno055_get_mag_radius_reg(bno055_t const* bno055,
+                                       bno055_mag_radius_reg_t* reg);
+bno055_err_t bno055_set_mag_radius_reg(bno055_t const* bno055,
+                                       bno055_mag_radius_reg_t const* reg);
+
+bno055_err_t bno055_get_acc_radius_reg(bno055_t const* bno055,
+                                       bno055_acc_radius_reg_t* reg);
+bno055_err_t bno055_set_acc_radius_reg(bno055_t const* bno055,
+                                       bno055_acc_radius_reg_t const* reg);
+
+bno055_err_t bno055_get_gyr_offset_z_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_z_reg_t* reg);
+bno055_err_t bno055_set_gyr_offset_z_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_z_reg_t const* reg);
+
+bno055_err_t bno055_get_gyr_offset_y_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_y_reg_t* reg);
+bno055_err_t bno055_set_gyr_offset_y_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_y_reg_t const* reg);
+
+bno055_err_t bno055_get_gyr_offset_x_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_x_reg_t* reg);
+bno055_err_t bno055_set_gyr_offset_x_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_x_reg_t const* reg);
+
+bno055_err_t bno055_get_mag_offset_z_reg(bno055_t const* bno055,
+                                         bno055_mag_offset_z_reg_t* reg);
+bno055_err_t bno055_set_mag_offset_z_reg(bno055_t const* bno055,
+                                         bno055_mag_offset_z_reg_t const* reg);
+
+bno055_err_t bno055_get_mag_offset_y_reg(bno055_t const* bno055,
+                                         bno055_mag_offset_y_reg_t* reg);
+bno055_err_t bno055_set_mag_offset_y_reg(bno055_t const* bno055,
+                                         bno055_mag_offset_y_reg_t const* reg);
+
+bno055_err_t bno055_get_mag_offset_x_reg(bno055_t const* bno055,
+                                         bno055_mag_offset_x_reg_t* reg);
+bno055_err_t bno055_set_mag_offset_x_reg(bno055_t const* bno055,
+                                         bno055_mag_offset_x_reg_t const* reg);
+
+bno055_err_t bno055_get_acc_offset_z_reg(bno055_t const* bno055,
+                                         bno055_acc_offset_z_reg_t* reg);
+bno055_err_t bno055_set_acc_offset_z_reg(bno055_t const* bno055,
+                                         bno055_acc_offset_z_reg_t const* reg);
+
+bno055_err_t bno055_get_acc_offset_y_reg(bno055_t const* bno055,
+                                         bno055_acc_offset_y_reg_t* reg);
+bno055_err_t bno055_set_acc_offset_y_reg(bno055_t const* bno055,
+                                         bno055_acc_offset_y_reg_t const* reg);
+
+bno055_err_t bno055_get_acc_offset_x_reg(bno055_t const* bno055,
+                                         bno055_acc_offset_x_reg_t* reg);
+bno055_err_t bno055_set_acc_offset_x_reg(bno055_t const* bno055,
+                                         bno055_gyr_offset_x_reg_t const* reg);
+
+bno055_err_t bno055_get_axis_map_sign_reg(bno055_t const* bno055,
+                                          bno055_axis_map_sign_reg_t* reg);
+bno055_err_t bno055_set_axis_map_sign_reg(
+    bno055_t const* bno055,
+    bno055_axis_map_sign_reg_t const* reg);
+
+bno055_err_t bno055_get_axis_map_config_reg(bno055_t const* bno055,
+                                            bno055_axis_map_config_reg_t* reg);
+bno055_err_t bno055_set_axis_map_config_reg(
+    bno055_t const* bno055,
+    bno055_axis_map_config_reg_t const* reg);
+
+bno055_err_t bno055_get_temp_source_reg(bno055_t const* bno055,
+                                        bno055_temp_source_reg_t* reg);
+bno055_err_t bno055_set_temp_source_reg(bno055_t const* bno055,
+                                        bno055_temp_source_reg_t const* reg);
+
+bno055_err_t bno055_get_sys_trigger_reg(bno055_t const* bno055,
+                                        bno055_sys_trigger_reg_t* reg);
+bno055_err_t bno055_set_sys_trigger_reg(bno055_t const* bno055,
+                                        bno055_sys_trigger_reg_t const* reg);
+
 #ifdef __cplusplus
 }
 #endif

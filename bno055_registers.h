@@ -243,8 +243,8 @@ typedef struct {
 } bno055_axis_map_sign_reg_t;
 
 typedef struct {
-    uint8_t sic_matrix : 8;
-} bno055_sic_matrix_t;
+    int16_t sic_matrix[3][3];
+} bno055_sic_matrix_reg_t;
 
 typedef struct {
     int16_t acc_offset_x : 16;

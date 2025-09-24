@@ -216,8 +216,12 @@ typedef struct {
 } bno055_unit_sel_reg_t;
 
 typedef struct {
-    uint8_t power_mode : 2;
+    uint8_t operation_mode : 4;
 } bno055_opr_mode_reg_t;
+
+typedef struct {
+    uint8_t power_mode : 2;
+} bno055_pwr_mode_reg_t;
 
 typedef struct {
     uint8_t clk_sel : 1;
